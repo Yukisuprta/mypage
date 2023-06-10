@@ -98,7 +98,7 @@
         $(document).ready(function hey() {
             fetch("http://spartacodingclub.shop/sparta_api/weather/tokyo").then(res => res.json()).then(data => {
 
-                let number = data['temp']
+                let number = data['temp'];
                 $('#temp').text(number)
 
 
