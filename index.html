@@ -94,13 +94,12 @@
         /*    border-radius: 10px;*/
         /*}*/
     </style>
-    <script>
+      <script>
         $(document).ready(function hey() {
             fetch("http://spartacodingclub.shop/sparta_api/weather/tokyo").then(res => res.json()).then(data => {
 
                 let number = data['temp']
-                tmep_html =`${number}`
-                $('#temp').text(tmep_html)
+                $('#temp').text(number)
 
 
 
